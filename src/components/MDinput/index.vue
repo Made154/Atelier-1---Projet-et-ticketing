@@ -4,6 +4,7 @@
       <i v-if="icon" :class="['el-icon-' + icon]" class="el-input__icon material-input__icon" />
       <input
         v-if="type === 'email'"
+        :id="inputId"
         v-model="currentValue"
         :name="name"
         :placeholder="fillPlaceHolder"
@@ -19,6 +20,7 @@
       >
       <input
         v-if="type === 'url'"
+        :id="inputId"
         v-model="currentValue"
         :name="name"
         :placeholder="fillPlaceHolder"
@@ -34,6 +36,7 @@
       >
       <input
         v-if="type === 'number'"
+        :id="inputId"
         v-model="currentValue"
         :name="name"
         :placeholder="fillPlaceHolder"
@@ -54,6 +57,7 @@
       >
       <input
         v-if="type === 'password'"
+        :id="inputId"
         v-model="currentValue"
         :name="name"
         :placeholder="fillPlaceHolder"
@@ -71,6 +75,7 @@
       >
       <input
         v-if="type === 'tel'"
+        :id="inputId"
         v-model="currentValue"
         :name="name"
         :placeholder="fillPlaceHolder"
@@ -86,6 +91,7 @@
       >
       <input
         v-if="type === 'text'"
+        :id="inputId"
         v-model="currentValue"
         :name="name"
         :placeholder="fillPlaceHolder"
@@ -102,7 +108,7 @@
         @input="handleModelInput"
       >
       <span class="material-input-bar" />
-      <label class="material-label">
+      <label :for="inputId" class="material-label">
         <slot />
       </label>
     </div>
@@ -152,6 +158,9 @@ export default {
     }
   },
   computed: {
+    inputId() {
+      return 'material-input-' + this._uid
+    },
     computedClasses() {
       return {
         'material--active': this.focus,

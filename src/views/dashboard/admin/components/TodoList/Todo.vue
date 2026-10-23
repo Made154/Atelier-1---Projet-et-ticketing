@@ -5,6 +5,7 @@
         :checked="todo.done"
         class="toggle"
         type="checkbox"
+        aria-label="Toggle todo"
         @change="toggleTodo( todo)"
       >
       <label @dblclick="editing = true" v-text="todo.text" />
@@ -15,6 +16,7 @@
       v-focus="editing"
       :value="todo.text"
       class="edit"
+      aria-label="Edit todo"
       @keyup.enter="doneEdit"
       @keyup.esc="cancelEdit"
       @blur="doneEdit"

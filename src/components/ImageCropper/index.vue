@@ -21,7 +21,7 @@
           </i>
           <span v-show="loading !== 1" class="vicp-hint">{{ lang.hint }}</span>
           <span v-show="!isSupported" class="vicp-no-supported-hint">{{ lang.noSupported }}</span>
-          <input v-show="false" v-if="step == 1" ref="fileinput" type="file" @change="handleChange">
+          <input v-show="false" v-if="step == 1" ref="fileinput" type="file" aria-label="Select image" @change="handleChange">
         </div>
         <div v-show="hasError" class="vicp-error">
           <i class="vicp-icon2" />
@@ -69,6 +69,7 @@
                 step="1"
                 min="0"
                 max="100"
+                aria-label="Zoom"
                 @input="zoomChange"
               >
               <i
