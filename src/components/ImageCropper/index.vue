@@ -1434,7 +1434,6 @@ export default {
   width: 100%;
   cursor: pointer;
   background: transparent;
-  border-color: transparent;
   color: transparent;
   height: 6px;
   border-radius: 2px;
