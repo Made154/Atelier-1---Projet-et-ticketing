@@ -80,8 +80,11 @@
     "url": "https://github.com/PanJiaChen/vue-element-admin/issues"
   },
   "engines": {
-    "node": ">=8.9",
-    "npm": ">= 3.0.0"
+    "node": ">=16.14",
+    "npm": ">=8.3"
+  },
+  "overrides": {
+    "webpack": "^4.47.0"
   },
   "keywords": [
     "vue",
