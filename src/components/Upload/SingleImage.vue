@@ -109,8 +109,6 @@ export default {
                 height: 100%;
                 left: 0;
                 top: 0;
-                cursor: default;
-                text-align: center;
                 color: #fff;
                 opacity: 0;
                 font-size: 20px;

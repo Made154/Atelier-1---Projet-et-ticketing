@@ -156,7 +156,6 @@ export default {
   border-color: #4AB7BD;
 }
 .example {
-  font-size: 50px;
   color: #F6416C;
   display: block;
   margin: 10px 0;

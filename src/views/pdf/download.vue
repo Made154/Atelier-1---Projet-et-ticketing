@@ -129,7 +129,6 @@ export default {
     --x-height-multiplier: 0.375;
     --baseline-multiplier: 0.17;
 
-    letter-spacing: .01rem;
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
@@ -169,7 +168,6 @@ export default {
     --x-height-multiplier: 0.375;
     --baseline-multiplier: 0.17;
     font-family: medium-content-serif-font, Georgia, Cambria, "Times New Roman", Times, serif;
-    letter-spacing: .01rem;
     font-weight: 400;
     font-style: italic;
     font-size: 21px;
